@@ -25,10 +25,10 @@ Please consider them and prepare your test environment.
 
 ### Author / Company
 
-Datadrivers GmbH
-Teilfeld 8
-20459 Hamburg
-Germany
+Datadrivers GmbH   
+Teilfeld 8  
+20459 Hamburg  
+Germany  
 
 Website: [http://www.datadrivers.de](http://www.datadrivers.de)
 
