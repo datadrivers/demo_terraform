@@ -6,11 +6,14 @@
 # If you don't use the aws-cli, please create a credential file and add all
 # login information. After that add the path of the file to the config parameter
 # shared_credentials_file and remove the beginning '#' to activate it.
+# Alternative use the config parameters access_key and secret_key with your credentials.
 #
 
 provider "aws" {
   region     = "us-west-2"
-  # shared_credentials_file = "PATH TO THE FILE"
+  #access_key = "INSERT AWS ACCESS KEY HERE"
+  #secret_key = "INSERT AWS SECRET KEY HERE"
+  #shared_credentials_file = "INSERT PATH TO THE FILE HERE"
 }
 
 # Configure the ssh keypair
@@ -76,5 +79,16 @@ resource "aws_instance" "example" {
   user_data = "${file("userdata.sh")}"
   vpc_security_group_ids = ["${aws_security_group.default.id}"]
   key_name = "example-demo-keypair"
+}
+
+# Output
+#
+
+output "public ip" {
+  value = "${aws_instance.example.public_ip}"
+}
+
+output "public dns" {
+  value = "${aws_instance.example.public_dns}"
 }
 
