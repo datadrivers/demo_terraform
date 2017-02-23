@@ -155,7 +155,3 @@ docker_image.nginx: Destruction complete
 Destroy complete! Resources: 2 destroyed.
 ```
 
-
-### todo
-- extend the mac helper script to provide start and stop as options
-
