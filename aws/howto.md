@@ -222,4 +222,27 @@ public dns = ec2-xxxxxxxxxxx.us-west-2.compute.amazonaws.com
 public ip = 1.2.3.4
 ```
 
+To destroy the demo setup, type `terraform destroy` and confirm with 'yes'.
+```
+terraform destroy
+Do you really want to destroy?
+  Terraform will delete all your managed infrastructure.
+  There is no undo. Only 'yes' will be accepted to confirm.
 
+  Enter a value: yes
+
+aws_key_pair.example_demo_keypair: Refreshing state... (ID: example-demo-keypair)
+aws_security_group.default: Refreshing state... (ID: sg-xxxxxxxxxx)
+aws_instance.example: Refreshing state... (ID: i-06d2217c334b3bcc9)
+aws_key_pair.example_demo_keypair: Destroying...
+aws_instance.example: Destroying...
+aws_key_pair.example_demo_keypair: Destruction complete
+aws_instance.example: Still destroying... (10s elapsed)
+aws_instance.example: Still destroying... (20s elapsed)
+aws_instance.example: Still destroying... (30s elapsed)
+aws_instance.example: Still destroying... (40s elapsed)
+aws_instance.example: Still destroying... (50s elapsed)
+aws_instance.example: Destruction complete
+aws_security_group.default: Destroying...
+aws_security_group.default: Destruction complete
+```
