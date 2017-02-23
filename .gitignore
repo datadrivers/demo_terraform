@@ -1,2 +1,6 @@
-terraform.tfstate
-terraform.tfstate.backup
+.idea/
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.plan
+*.tfvars
