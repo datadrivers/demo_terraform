@@ -4,7 +4,7 @@ Try out [Terraform](https://www.terraform.io/) orchestration on [AWS](https://aw
 
 ### General information
 
-This is a minimal example setup for testing and playing around with Terraform.
+These minimal example setups are for testing and playing around with Terraform.
 Terraform is one of new orchestration tools in cloud oriented management software universe.
 
 Each subfolder with an example is a setup for the named service stack or hosting provider (like AWS, Docker, etc.).
