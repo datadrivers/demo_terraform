@@ -5,7 +5,7 @@ Provide a nginx Docker container managed by Terraform
 ## General information
 
 This demo setup provides a minimal Terraform setup to use it with Docker via remote API.
-For Mac users we provide a simple shell script named `start_docker_socket.sh` to start a Docker container, which expose the Docker remote API.
+For Mac users we provide a simple shell script named `docker_socket.sh` to start a Docker container, which expose the Docker remote API.
 It uses socat to expose the Docker daemon unix socket on a configured listen port.
 
 The reason for the hack can be found on the offical Docker known-issues page (https://docs.docker.com/docker-for-mac/troubleshoot/#/known-issues).
@@ -23,7 +23,7 @@ Please use the offical documentation to install and configure your Docker setup.
 Note: Please check your environment to provide a running docker daemon and service!
 Any Docker specific commands or deep dives are not listed or explained in this howto file.
 
-As a Mac user please start the script `start_docker_socket.sh` as your first task. It is important to remember the configured and exposed listen port for the Terraform configuration.
+As a Mac user please start the script `docker_socket.sh` as your first task. It is important to remember the configured and exposed listen port for the Terraform configuration.
 The default configuration exposes the port on the localhost (loopback interface) with port 1234.
 
 Start a shell (best: bash/zsh) and change into your demo folder named `docker` and modify the Terraform file `foo_nginx.tf` to support your environment.
